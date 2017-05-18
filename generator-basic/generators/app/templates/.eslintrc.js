@@ -28,5 +28,8 @@ module.exports = {
         SwitchCase: 1,
       },
     ],
+    'comma-dangle': 0,
+    'react/jsx-filename-extension': 0,
+    },
   },
 };
