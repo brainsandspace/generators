@@ -6,5 +6,6 @@
       }
     }],
     "react" // todo make this optional
-  ]
+  ],
+  "plugins": ["transform-object-rest-spread", "transform-class-properties"] 
 }

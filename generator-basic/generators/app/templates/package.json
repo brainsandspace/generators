@@ -18,6 +18,8 @@
     "babel-loader": "*",
     "babel-core": "*",
     "babel-preset-env": "*",
+    "babel-plugin-transform-object-rest-spread": "*",
+    "babel-plugin-transform-class-properties": "*",
     "css-loader":  "*",
     "node-sass":   "*",
     "sass-loader": "*",
