@@ -24,8 +24,6 @@
     "eslint-config-airbnb": "*",
     "eslint-import-resolver-webpack": "*",
     "eslint-plugin-import": "*",
-    "eslint-plugin-jsx-a11y": "*",
-    "eslint-plugin-react": "*",
     "css-loader": "*",
     "node-sass": "*",
     "sass-loader": "*",

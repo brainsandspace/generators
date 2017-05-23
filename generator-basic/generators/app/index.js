@@ -69,6 +69,8 @@ module.exports = class extends Generator {
         packageSettings.devDependencies,
         {
           'babel-preset-react': '*',
+          'eslint-plugin-jsx-a11y': '*',
+          'eslint-plugin-react': '*',
         }
       );
     }
