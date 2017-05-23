@@ -1,3 +1,11 @@
+/**
+ * Borrowed some (not all) conventions from Scott Nonnenberg. 👍
+ * https://blog.scottnonnenberg.com/eslint-part-1-exploration/
+ * 
+ * - Always use ‘error’ or ‘off’ instead of 0 and 2. Numbers are for real config values.
+ * - Rules are in alphabetical order: first core ESLint, then plugins sorted by name.
+ */
+
 module.exports = {
   env: {
     browser: true,
@@ -13,7 +21,7 @@ module.exports = {
     // ecmaVersion: 6,
     sourceType: 'module',
   },
-  // plugins: ['import', 'redux-saga', 'react', 'jsx-a11y'],
+  plugins: ['import', 'redux-saga', 'react', 'jsx-a11y'],
   globals: {
     NODE_ENV: true,
     describe: true,
@@ -21,6 +29,7 @@ module.exports = {
     expect: true,
   },
   rules: {
+    'comma-dangle': 'off',
     indent: [
       'error',
       2,
@@ -28,7 +37,15 @@ module.exports = {
         SwitchCase: 1,
       },
     ],
-    'comma-dangle': 0,
-    'react/jsx-filename-extension': 0,
+    'import/no-extraneous-dependencies': 'off',
+    'import/extensions': 'off',
+    'react/jsx-filename-extension': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      webpack: {
+        config: 'webpack.config.js',
+      },
+    },
   },
 };
